@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <item
+        android:id="@+id/navigation_home"
+        android:title="Home"
+        android:icon="@drawable/home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:title="Search"
+        android:icon="@drawable/search"
+        app:showAsAction="ifRoom" />
+
+    <!-- This is your floating action button (FAB) -->
+    <item
+        android:id="@+id/action_add"
+        android:title="+"
+        android:icon="@drawable/add"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:title="Chats"
+        android:icon="@drawable/chat"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/profile_navigation"
+        android:title="Profile"
+        android:icon="@drawable/profile"
+        app:showAsAction="ifRoom" />
 </menu>
