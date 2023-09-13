@@ -1,5 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
 
     <item
         android:id="@+id/navigation_home"
@@ -8,20 +10,20 @@
         app:showAsAction="ifRoom" />
 
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_search"
         android:title="Search"
         android:icon="@drawable/search"
         app:showAsAction="ifRoom" />
 
     <!-- This is your floating action button (FAB) -->
     <item
-        android:id="@+id/action_add"
+        android:id="@+id/navigation_add"
         android:title="+"
         android:icon="@drawable/add"
         app:showAsAction="always" />
 
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_chats"
         android:title="Chats"
         android:icon="@drawable/chat"
         app:showAsAction="ifRoom" />

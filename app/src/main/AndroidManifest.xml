@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
 
     <application
         android:allowBackup="true"
@@ -11,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -18,9 +20,88 @@
             android:theme="@style/Theme.MyApplication.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <!-- Add SignUpActivity to the manifest -->
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true"
+            android:label="Sign Up"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+        </activity>
+        <activity
+            android:name=".HomeScreenActivity"
+            android:exported="true"
+            android:label="Home Screen"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+        </activity>
+        <activity
+            android:name=".PostItem"
+            android:exported="true"
+            android:label="Post Item Screen"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:exported="true"
+            android:label="Search Activity Screen"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ChatActivity"
+            android:exported="true"
+            android:label="Chat Activity Screen"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Profile"
+            android:exported="true"
+            android:label="Profile Activity Screen"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+        </activity>
+        <activity
+            android:name=".EditProfile"
+            android:exported="true"
+            android:label="Edit Profile Activity Screen"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="true"
+            android:label="Forgot Password Activity Screen"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+        </activity>
+        <activity
+            android:name=".EmailAuthenticator"
+            android:exported="true"
+            android:label="Email Authenticator Activity Screen"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+        </activity>
+        <activity
+            android:name=".UploadVideo"
+            android:exported="true"
+            android:label="Upload Video Activity Screen"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+        </activity>
+        <activity
+            android:name=".UploadImage"
+            android:exported="true"
+            android:label="Upload Image Activity Screen"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ItemScreen"
+            android:exported="true"
+            android:label="Item Activity Screen"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Report"
+            android:exported="true"
+            android:label="Report Activity Screen"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
         </activity>
     </application>
 

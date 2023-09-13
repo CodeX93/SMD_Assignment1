@@ -2,9 +2,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
+    tools:context=".SearchActivity"
     android:layout_marginTop="10dp">
 
     <LinearLayout
@@ -42,12 +44,13 @@
 
 
             <RelativeLayout
+                android:id="@+id/searchItem1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end">
 
                 <Button
-                    android:id="@+id/textButton1"
+                    android:id="@+id/searchBtn1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Item Number 1"
@@ -67,6 +70,7 @@
 
 
             <RelativeLayout
+                android:id="@+id/searchItem2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end">
@@ -92,6 +96,7 @@
 
 
             <RelativeLayout
+                android:id="@+id/searchItem3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end">
@@ -120,6 +125,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/PopularItems"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
