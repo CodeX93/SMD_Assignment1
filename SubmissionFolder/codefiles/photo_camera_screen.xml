@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UploadImage">
+    <LinearLayout
+        android:id="@+id/CameraControlButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:padding="16dp">
+
+        <!-- Gallery Button -->
+        <ImageView
+            android:id="@+id/crossBtn"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/cross" />
+
+        <!-- Capture Button -->
+        <ImageView
+            android:id="@+id/brigtness"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/brightness" />
+
+        <!-- Camera Round Button -->
+        <ImageView
+            android:id="@+id/history"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/history"
+            />
+    </LinearLayout>
+    <!-- Camera Preview -->
+
+    <!-- Buttons Container -->
+    <FrameLayout
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+android:layout_below="@+id/CameraControlButton"
+        android:background="@color/light_grey"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonsContainer"
+        android:layout_marginBottom="-2dp">
+
+        <!-- Place your camera preview surface here -->
+        <!-- You can use SurfaceView or TextureView for camera preview -->
+    </FrameLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/buttonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <!-- Cross Button (Left) -->
+
+
+        <!-- Gallery, Capture, and Camera Round Buttons -->
+        <LinearLayout
+            android:id="@+id/captureButtonsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Gallery Button -->
+            <ImageView
+                android:id="@id/galleryButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/gallery" />
+
+            <!-- Capture Button -->
+            <ImageView
+                android:id="@+id/captureButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+               android:src="@drawable/cameracapture" />
+
+            <!-- Camera Round Button -->
+            <ImageView
+                android:id="@+id/cameraRoundButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/cameramode"
+                 />
+        </LinearLayout>
+
+        <!-- Photo and Camera Buttons with Orange Background -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/captureButtonsContainer"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- Photo Button -->
+            <Button
+                android:id="@+id/photoButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:text="Photo" />
+
+            <!-- Camera Round Button -->
+            <Button
+                android:id="@+id/videoModeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="#ffffffff"
+                android:textColor="@color/black"
+                android:text="Video" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

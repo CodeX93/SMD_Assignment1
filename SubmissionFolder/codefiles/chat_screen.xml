@@ -1,0 +1,279 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    tools:context=".ChatActivity">
+<TextView
+    android:id="@+id/ChatsLabel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Chats"
+    android:textSize="25dp"
+    android:textStyle="bold"
+    android:padding="10dp"
+    android:layout_marginBottom="25dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ChatsLabel">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Chat Item 1 -->
+            <!-- ... (previous layout code) ... -->
+
+            <LinearLayout
+                android:id="@+id/chat1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/avatarImageView1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:background="#ffffff"
+                    android:src="@drawable/avatar"
+                    android:contentDescription="User Profile Avatar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="User 1"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/newMessagesTextView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="5 new Messages"
+                        android:textSize="12dp"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <!-- Add a right arrow icon to the right-most side -->
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/right_arrow"
+                android:contentDescription="Right Arrow Icon" />
+            </LinearLayout>
+
+
+
+
+            <!-- Chat Item 2 (Copy the above layout structure to add more chat items) -->
+            <LinearLayout
+                android:id="@+id/chat2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/avatarImageView2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:background="#ffffff"
+                    android:src="@drawable/avatar"
+                    android:contentDescription="User Profile Avatar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="User 2"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/newMessagesTextView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="9 new Messages"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chat3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/avatarImageView3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:background="#00FAF2E3"
+                    android:src="@drawable/avatar"
+                    android:contentDescription="User Profile Avatar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="User 3"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/newMessagesTextView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1 new Messages"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chat4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/avatarImageView4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:background="#00FAF2E3"
+                    android:src="@drawable/avatar"
+                    android:contentDescription="User Profile Avatar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="User 4"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/newMessagesTextView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1 new Messages"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/chat5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/avatarImageView5"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:background="#00FAF2E3"
+                    android:src="@drawable/avatar"
+                    android:contentDescription="User Profile Avatar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="User 5"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/newMessagesTextView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100+ new Messages"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Add more chat items as needed -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation" />
+</RelativeLayout>
