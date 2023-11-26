@@ -42,7 +42,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="15dp"/>
         <EditText
-            android:id="@+id/email_input"
+            android:id="@+id/Name_Input"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:hint="Enter Name"
@@ -59,9 +59,8 @@
             android:layout_marginLeft="15dp"/>
 
         <EditText
-            android:id="@+id/password_input"
+            android:id="@+id/email_input"
             android:layout_height="wrap_content"
-
             android:layout_width="match_parent"
             android:hint="Enter email"
             android:inputType="textEmailAddress"
@@ -71,10 +70,45 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Contact Number"
+            android:text="Password"
             android:textSize="25dp"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="15dp"/>
+
+        <EditText
+            android:id="@+id/password_input"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:layout_marginLeft="20dp"
+            android:padding="20dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"/>
+
+        <EditText
+            android:id="@+id/confirm_password_input"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:layout_marginLeft="20dp"
+            android:padding="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Contact Number"
+            android:textSize="25dp" />
 
         <EditText
             android:id="@+id/contact_input"
@@ -142,7 +176,7 @@
         android:layout_height="match_parent"
         android:gravity="center">
 
-        <Button
+        <TextView
             android:id="@+id/login_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

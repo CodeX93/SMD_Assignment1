@@ -1,12 +1,13 @@
-package com.example.myapplication;
+package com.example.i200778AghaHaider;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.myapplication.R;
 
 public class ConversationActivity extends AppCompatActivity {
     ImageView backButton,cameraButton;

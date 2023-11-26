@@ -1,3 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+
+        <string-array name="country_array">
+            <item>Australia</item>
+            <item>Germany</item>
+            <item>India</item>
+            <item>Israel</item>
+            <item>Pakistan</item>
+            <item>Sweden</item>
+            <item>United States</item>
+            <!-- Add more items as needed -->
+        </string-array>
+        <string-array name="city_array">
+            <item>Sydney</item>
+            <item>Frankfurt</item>
+            <item>Delhi</item>
+            <item>Netanya</item>
+            <item>Islamabad</item>
+            <item>Stockholm</item>
+            <item>Miami</item>
+            <!-- Add more items as needed -->
+        </string-array>
+
+
+
 </resources>

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.myapplication">
+    package="com.example.i200778AghaHaider"
+
+
+    >
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,10 +17,17 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
-
+        <service
+            android:name=".PushNotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.i200778AghaHaider.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.MyApplication.NoActionBar">
@@ -26,81 +39,87 @@
 
         <!-- Add SignUpActivity to the manifest -->
         <activity
-            android:name=".SignUpActivity"
+            android:name="com.example.i200778AghaHaider.SignUpActivity"
             android:exported="true"
             android:label="Sign Up"
             android:theme="@style/Theme.MyApplication.NoActionBar">
         </activity>
         <activity
-            android:name=".HomeScreenActivity"
+            android:name="com.example.i200778AghaHaider.HomeScreenActivity"
             android:exported="true"
             android:label="Home Screen"
             android:theme="@style/Theme.MyApplication.NoActionBar">
         </activity>
         <activity
-            android:name=".PostItem"
+            android:name="com.example.i200778AghaHaider.PostItem"
             android:exported="true"
             android:label="Post Item Screen"
             android:theme="@style/Theme.MyApplication.NoActionBar">
         </activity>
         <activity
-            android:name=".SearchActivity"
+            android:name="com.example.i200778AghaHaider.SearchActivity"
             android:exported="true"
             android:label="Search Activity Screen"
             android:theme="@style/Theme.MyApplication.NoActionBar">
         </activity>
         <activity
-            android:name=".ChatActivity"
+            android:name="com.example.i200778AghaHaider.ChatActivity"
             android:exported="true"
             android:label="Chat Activity Screen"
             android:theme="@style/Theme.MyApplication.NoActionBar">
         </activity>
         <activity
-            android:name=".Profile"
+            android:name="com.example.i200778AghaHaider.Profile"
             android:exported="true"
             android:label="Profile Activity Screen"
             android:theme="@style/Theme.MyApplication.NoActionBar">
         </activity>
         <activity
-            android:name=".EditProfile"
+            android:name="com.example.i200778AghaHaider.EditProfile"
             android:exported="true"
             android:label="Edit Profile Activity Screen"
             android:theme="@style/Theme.MyApplication.NoActionBar">
         </activity>
         <activity
-            android:name=".ForgotPassword"
+            android:name="com.example.i200778AghaHaider.ForgotPassword"
             android:exported="true"
             android:label="Forgot Password Activity Screen"
             android:theme="@style/Theme.MyApplication.NoActionBar">
         </activity>
         <activity
-            android:name=".EmailAuthenticator"
+            android:name="com.example.i200778AghaHaider.EmailAuthenticator"
             android:exported="true"
             android:label="Email Authenticator Activity Screen"
             android:theme="@style/Theme.MyApplication.NoActionBar">
         </activity>
         <activity
-            android:name=".UploadVideo"
+            android:name="com.example.i200778AghaHaider.UploadVideo"
             android:exported="true"
             android:label="Upload Video Activity Screen"
             android:theme="@style/Theme.MyApplication.NoActionBar">
         </activity>
         <activity
-            android:name=".UploadImage"
+            android:name="com.example.i200778AghaHaider.UploadImage"
             android:exported="true"
             android:label="Upload Image Activity Screen"
             android:theme="@style/Theme.MyApplication.NoActionBar">
         </activity>
         <activity
-            android:name=".ItemScreen"
+            android:name="com.example.i200778AghaHaider.ItemScreen"
             android:exported="true"
             android:label="Item Activity Screen"
             android:theme="@style/Theme.MyApplication.NoActionBar">
         </activity>
         <activity
-            android:name=".Report"
+            android:name="com.example.i200778AghaHaider.Report"
             android:exported="true"
             android:label="Report Activity Screen"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.example.i200778AghaHaider.ConversationActivity"
+            android:exported="true"
+            android:label="Conversation Activity Screen"
             android:theme="@style/Theme.MyApplication.NoActionBar">
         </activity>
     </application>

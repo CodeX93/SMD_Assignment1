@@ -9,7 +9,7 @@
     <!-- Login Screen -->
     <fragment
         android:id="@+id/login_screen"
-        android:name="com.example.myapplication.MainActivity"
+        android:name="com.example.i200778AghaHaider.MainActivity"
         android:label="Login Screen"
         tools:layout="@layout/login_screen">
         <action
@@ -21,7 +21,7 @@
     <!-- Destination Screen -->
     <fragment
         android:id="@+id/SignupScreen"
-        android:name="com.example.myapplication.SignupActivity"
+        android:name="com.example.i200778AghaHaider.SignupActivity"
         android:label="SignUp Screen"
         tools:layout="@layout/register_screen" />
 </navigation>

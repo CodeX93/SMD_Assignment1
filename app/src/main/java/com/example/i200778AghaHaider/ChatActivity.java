@@ -1,12 +1,11 @@
-package com.example.myapplication;
+package com.example.i200778AghaHaider;
 
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.myapplication.HomeScreenActivity;
-import com.example.myapplication.PostItem;
-import com.example.myapplication.Profile;
+
+
 import com.example.myapplication.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import android.view.MenuItem;

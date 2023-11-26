@@ -32,6 +32,7 @@
             <!-- ... (previous layout code) ... -->
 
             <LinearLayout
+                android:id="@+id/chat1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -90,6 +91,7 @@
 
             <!-- Chat Item 2 (Copy the above layout structure to add more chat items) -->
             <LinearLayout
+                android:id="@+id/chat2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -133,6 +135,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/chat3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -176,6 +179,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/chat4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -218,6 +222,7 @@
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/chat5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"

@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.i200778AghaHaider;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.VideoView;
+
+import com.example.myapplication.R;
 
 public class UploadVideo extends AppCompatActivity {
 

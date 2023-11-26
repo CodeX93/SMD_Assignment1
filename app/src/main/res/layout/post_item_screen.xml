@@ -43,28 +43,28 @@
             android:layout_gravity="center_horizontal"
             android:padding="10dp">
 
-            <Button
+            <ImageView
                 android:id="@+id/uploadImage"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:padding="10dp"
                 android:text="Upload Image"
-                android:drawableLeft="@drawable/uploadimage"
+                android:src="@drawable/uploadimage"
                 android:drawablePadding="8dp"
                 android:background="@drawable/dotted_box"
                 android:gravity="center"
                 android:textAlignment="center"
                 android:textSize="16sp" />
 
-            <Button
+            <ImageView
                 android:id="@+id/uploadvideo"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:padding="10dp"
                 android:text="Upload Video"
-                android:drawableLeft="@drawable/uploadvideo"
+                android:src="@drawable/uploadvideo"
                 android:drawablePadding="8dp"
                 android:background="@drawable/dotted_box"
                 android:gravity="center"
@@ -89,6 +89,7 @@
             android:padding="20dp"
             />
         <TextView
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Hourly Rate"
@@ -112,7 +113,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="15dp"/>
         <EditText
-            android:id="@+id/description_input"
+            android:id="@+id/item_description_input"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:hint="Enter Description"
@@ -130,12 +131,12 @@
 
 
         <Spinner
-            android:id="@+id/country_input"
+            android:id="@+id/city_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:padding="20dp"
-            android:contentDescription="Country Selector"
+            android:contentDescription="City Selector"
             android:hint="Select City" />
 
        <Button

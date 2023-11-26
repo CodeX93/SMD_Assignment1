@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ItemScreen">
+    tools:context="com.example.i200778AghaHaider.ItemScreen">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -69,6 +69,7 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
             <ImageView
+                android:id="@+id/ItemImage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/empty_image"
@@ -94,6 +95,7 @@
             android:layout_margin="10dp"
             android:orientation="horizontal">
          <TextView
+             android:id="@+id/Item_Rate"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:text="$12"
@@ -110,7 +112,7 @@
 
         </LinearLayout>
         <TextView
-            android:id="@+id/item_name_label"
+            android:id="@+id/Item_Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Name of the item come here"
@@ -135,6 +137,7 @@
                 android:gravity="start" />
 
             <TextView
+                android:id="@+id/Item_Location"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
@@ -142,13 +145,10 @@
                 android:gravity="start"
                 android:textSize="15sp" />
 
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:layout_gravity="fill_horizontal" />
+
 
             <TextView
+                android:id="@+id/Item_Posted_Date"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
@@ -157,7 +157,7 @@
                 android:textSize="15sp" />
         </LinearLayout>
         <TextView
-            android:id="@+id/item_description_label"
+            android:id="@+id/Item_Description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo eget odio ullamcorper luctus. In hac habitasse platea dictumst. Cras eu turpis eget elit interdum pellentesque. Fusce a sollicitudin elit. Suspendisse nec justo nec mi congue laoreet eget id metus. Integer eu purus id sapien vehicula suscipit.  "
@@ -182,6 +182,7 @@
                 android:layout_weight="0.8">
 
                 <TextView
+                    android:id="@+id/UserName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="User 1"
@@ -189,6 +190,7 @@
                     android:textStyle="bold"
                     />
                 <TextView
+                    android:id="@+id/UserContactNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="0300-1234567"
